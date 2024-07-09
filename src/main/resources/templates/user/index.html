@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="user/Userbase::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>Document</title>
+</head>
+<body>
+	<section>
+		<div>
+			<h1>User Details</h1>
+			<h4>
+				Name : <span th:text="${user.name}"></span>
+			</h4>
+			<h4>
+				Email : <span th:text="${user.email}"></span>
+			</h4>
+			<h4>
+				About: <span th:text="${user.about}"></span>
+			</h4>
+
+			<div class="row">
+			
+				<a th:href="@{/user/showcontacts/0}">View Contacts</a> 
+				<a th:href="@{/user/addcontacts}">Add Contacts</a>
+		
+			</div>
+			
+		</div>
+
+
+	</section>
+
+</body>
+</html>

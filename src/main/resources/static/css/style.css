@@ -1,0 +1,36 @@
+body {
+	background: #D3D3D3;
+}
+
+.bg-primary{
+	background:   #d166ff !important;
+}
+
+.banner{
+	width: 100%;
+	height: 93vh;
+	background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../image/home.jpg); 
+	background-size: cover;
+	color: White;
+	
+}
+
+.my-card{
+	padding: 20px;
+	background: white;
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 80px;
+  max-width: 600px;
+  height: 420px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -60px;
+
+}

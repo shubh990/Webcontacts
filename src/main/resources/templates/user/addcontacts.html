@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="user/Userbase::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>addContacts</title>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<div class="my-card">
+						<h1 class="text-center">Add Contact</h1>
+						<form novalidate="novalidate" th:action="@{/user/addcontacts-saved}" method="post" th:object="${contacts}">
+							<!-- Name -->
+							<div class="mb-3">
+
+								<label for="name" class="form-label">First Name</label> 
+								<input
+									type="text" class="form-control " id="name"
+									placeholder="Enter here" required="required"
+									name="name">
+
+							</div>
+							<!-- Name -->
+							<div class="mb-3">
+
+								<label for="name" class="form-label">Last Name</label> 
+								<input
+									type="text" class="form-control " id="secondName"
+									placeholder="Enter here" required="required"
+									name="secondName">
+
+							</div>
+							<!-- Name -->
+							<div class="mb-3">
+
+								<label for="work" class="form-label">Work</label> 
+								<input
+									type="text" class="form-control " id="work"
+									placeholder="Enter here" required="required"
+									name="work">
+
+							</div>
+							<!-- Name -->
+							<div class="mb-3">
+
+								<label for="email" class="form-label">Email</label> 
+								<input
+									type="text" class="form-control " id="email"
+									placeholder="Enter here" required="required"
+									name="email">
+
+							</div>
+							<!-- Name -->
+							<div class="mb-3">
+
+								<label for="phone" class="form-label">Phone</label> 
+								<input
+									type="number" class="form-control " id="phone"
+									placeholder="Enter here" required="required"
+									name="phone">
+
+							</div>
+							<!-- about -->
+							<div class="form-group mb-3">
+								<label for="description" class="form-label">Description</label>
+								<textarea placeholder="Enter about your self" rows="3"
+								name="description"
+								class="form-control"></textarea>
+							</div>
+							
+							<div align="center">
+
+								<button type="submit" class="btn bg-primary text-white ">Submit</button>
+
+							</div>
+	
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	
+	</section>
+</body>
+</html>
